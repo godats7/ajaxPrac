@@ -1,0 +1,16 @@
+<script>
+     fetch('https://godats7.github.io/price.json')
+    // fetch('https://codingapple1.github.io/price.json')
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("error 400 or error 500")
+        }
+        return response.json()
+    })
+    .then((result) => {
+        console.log(result)
+    })
+    .catch(() => {
+        console.log('errorrrrrrrr')
+    })
+</script>

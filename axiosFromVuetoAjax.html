@@ -1,0 +1,10 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+ 
+<script>
+   axios.get('https://godats7.github.io/price.json')
+   .then((result) => {
+       console.log(result.data)
+   }).catch(() => {
+       console.log('errrrrrror')
+   })
+</script>
